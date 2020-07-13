@@ -22,7 +22,11 @@
     <div class="profile-page sidebar-collapse">
       <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
         <div class="container">
-          <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">履歷</a>
+          <div class="navbar-translate">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#login">
+              登入
+            </button></a>
             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
               aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span
                 class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span
@@ -54,7 +58,7 @@
                 <div class="h2 title">張建文</div>
                 <p class="category text-white">網頁程式設計師, PHP工程師</p><a class="btn btn-primary smooth-scroll mr-2"
                   href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">聯絡我</a><a class="btn btn-primary"
-                  href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">作品集</a>
+                  href="#portfolio" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">作品集</a>
               </div>
             </div>
             <div class="section">
@@ -663,6 +667,34 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="login" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <!-- Login -->
+      <div class="card card-default">
+        <h5 class="card-header text-center text-warning bg-dark">登入</h5>
+        <div class="card-body">
+          <form>
+            <div class="form-group row"><label for="account" class="col-md-3 col-form-label text-md-right">帳號</label>
+              <div class="col-md-7"><input type="text" id="account" name="account" placeholder="Account"
+                  autocapitalize="off" autocomplete="account" class="form-control"></div>
+            </div>
+            <div class="form-group row"><label for="password" class="col-md-3 col-form-label text-md-right">密碼</label>
+              <div class="col-md-7"><input type="password" name="password" placeholder="Password"
+                  autocomplete="current-password" class="form-control"></div>
+            </div>
+            <div class="form-group row mb-0">
+              <div class="col-md-5 offset-md-3"><button type="button" class="btn btn-green"
+                  onclick="window.location.reload()">
+                  登入
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="container text-center"><a class="cc-facebook btn btn-link" href="https://www.facebook.com/chang180"
         target="_blank"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link "
